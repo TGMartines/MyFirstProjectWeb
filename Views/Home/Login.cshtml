@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Página de Login";
+}
+
+<style>
+        /* Estilos CSS para centralizar o conteúdo na tela */
+
+        .login-container {
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .login-container button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+    <div class="login-container">
+        <h2>Tela de Login</h2>
+        <form method="post" action="Autenticar.aspx"> <!-- Altere o action para a página onde você irá processar o login -->
+            <input type="text" name="email" placeholder="E-mail" required />
+            <br />
+            <input type="password" name="senha" placeholder="Senha" required />
+            <br />
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
